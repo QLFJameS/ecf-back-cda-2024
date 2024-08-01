@@ -29,7 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Cart` (
   `id` int NOT NULL,
-  `user_id` int DEFAULT NULL
+  `user_id` int DEFAULT NULL,
+   `product_id` int DEFAULT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
@@ -132,7 +133,9 @@ CREATE TABLE `Utilisateur` (
 --
 ALTER TABLE `Cart`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `FK_CartUser` (`user_id`);
+  ADD KEY `FK_CartUser` (`user_id`),
+   ADD KEY `FK_CartProduct` (`product_id`)
+  ;
 
 --
 -- Index pour la table `Categorie`
