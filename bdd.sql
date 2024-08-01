@@ -120,7 +120,7 @@ CREATE TABLE `Utilisateur` (
   `order_id` int DEFAULT NULL,
   `name` char(255) DEFAULT NULL,
   `email` char(255) DEFAULT NULL,
-  `passeword` char(255) DEFAULT NULL
+  `password` char(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
