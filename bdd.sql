@@ -55,7 +55,8 @@ CREATE TABLE `Commande` (
   `id` int NOT NULL,
   `cart_id` int DEFAULT NULL,
   `user_id` int DEFAULT NULL,
-  `product_id` int DEFAULT NULL
+  `product_id` int DEFAULT NULL,
+  'validate_commande' Date,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
